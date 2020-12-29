@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>มจท.10 </title>
+</head>
+<form>
+
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column.side, .column.middle {
+    width: 200%;
+  }
+}
+
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+}
+</style>
+ <body>
+
+    <div class="row">
+        <div class="column side">
+         
+        </div>
+        
+        <div class="column middle">
+            <image src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+    width="12%" height="12%" ALIGN=LEFT HSPACE=10 VSPACE=10></image>
+          <h2 ALIGN = "RIGHT" > มจท.10 </h2>
+    <h3 ALIGN="CENTER" >คําร้องขอลาพักการศึกษา</h3>
+    <h4 ALIGN="CENTER"> (สําหรับนักศึกษาที่ได้ศึกษามาแล้ว ไม่น้อยกว่าหนึ่งภาคการศึกษา)</h4>
+    <div action="action_page.php" ALIGN="RIGHT"> เขียนที่ มหาวิทยาลัยแม่โจ้</div><br>
+    <div action="action_page.php" style="float:right">
+        วันที่:
+        <input type="date" name="day">
+    </div><br><br><br>
+
+    <div>
+      <span action="action_page.php"ALIGN="left">
+        เรื่อง ขอลาพักการศึกษา ภาคเรียนที่
+        <select name="cars">
+          <OPTION SELECTED>ภาคเรียน
+          <option value="volvo">1</option>
+          <option value="saab">2</option>
+        </select>
+      </span>
+      <span action="action_page.php"ALIGN="left">
+      ปีการศึกษาที่
+      <SELECT>
+        <OPTION SELECTED>ปีการศึกษา
+          <OPTION VALUE=1>2559
+        <OPTION VALUE=2>2560
+        <OPTION VALUE=3>2561
+          <OPTION VALUE=4>2562
+            <OPTION VALUE=5>2563
+              <OPTION VALUE=6>2564
+                <OPTION VALUE=7>2565
+        </SELECT>
+      </span>
+    </div>
+    <br>
+    <div action="action_page.php"ALIGN="left">
+      เรียน คณบดีคณะ
+      <select name="คณะ">
+        <OPTION SELECTED>คณะ
+        <OPTION VALUE=1>วิทยาศาสตร์
+          <OPTION VALUE=2>ผลิตกรรมการเกษตร
+          <OPTION VALUE=3>วิศวะกรรมและอุตสาหกรรมเกษตร
+            <OPTION VALUE=4>พัฒนาการท่องเที่ยว
+              <OPTION VALUE=5>เศรษฐศาสตร์
+                <OPTION VALUE=6>บริหารธุรกิจ
+                  <OPTION VALUE=7>ศิลปศาสตร์
+                    <OPTION VALUE=8>เทคโนโลยีการประมงและทรัพยากรทางน้ำ
+                      <OPTION VALUE=9>สถาปัตยกรรมศาสตร์และการออกแบบสิ่งแวดล้อม            
+      </select>
+    </div>
+    <br>
+
+    <div action="action_page.php" style="float:right">
+      ข้าพเจ้า <input type="checkbox" name="sex" value="male">นาย <input type="checkbox" name="sex"   value="female">นาง 
+       <input type="checkbox" name="sex" value="male">นางสาว
+<span>ชื่อ <input type="text" name="firstname" size=13></span>
+<span> นามสกุล <input type="text" name="surname" size=13></span>
+    </div>
+      <br>
+      <br>
+
+<div>
+  <span action="action_page.php"ALIGN="left">
+    รหัสนักศึกษา
+    <Input Type="num" size="8" maxlength="10">
+    </span>
+    <span action="action_page.php"ALIGN="left">
+โทรศัพท์มือถือ
+  <Input Type="num" size="8" maxlength="10">
+    </span>
+<span>โปรดระบุ</span>
+</div>
+<br>
+<div>
+  หลักสูตร ปริญญาตรี <input type="checkbox" name="sex" value="male">4–5 ปี <input type="checkbox" name="sex"   value="female">4 ปีเทียบเข้าเรียน (2ปี) 
+  <input type="checkbox" name="sex" value="male">ภาคปกติ<input type="checkbox" name="sex" value="male">ภาคสมทบ
+</div>
+<br>
+<span action="action_page.php"ALIGN="left">
+  สาขา
+  <select name="major">
+    <OPTION SELECTED>สาขา
+    <OPTION VALUE=1>คณิตศาสตร์
+      <OPTION VALUE=2> เคมี
+      <OPTION VALUE=3>เทคโนโลยีสารสนเทศ
+        <OPTION VALUE=4>วิทยาการคอมพิวเตอร์
+          <OPTION VALUE=5>สถิติ
+            <OPTION VALUE=6>เทคโนโลยีชีวภาพ
+              <OPTION VALUE=7>วัสดุศาสตร์
+                <OPTION VALUE=8>อารักขาพืช
+                  <OPTION VALUE=9>ปฐพีศาสตร์
+                    <OPTION VALUE=10>สัตวศาสตร์
+                      <OPTION VALUE=11> เกษตรศาสตร์ (พืชไร่)
+                      <OPTION VALUE=12>พืชศาสตร์ (พืชสวน)
+                        <OPTION VALUE=13>เกษตรเคมี
+                          <OPTION VALUE=14>วิทยาศาสตร์และเทคโนโยลีการอาหาร
+                            <OPTION VALUE=15>วัสดุศาสตร์ (อุตสาหกรรมยาง)
+                              <OPTION VALUE=16>วิศวกรรมเกษตร
+                                <OPTION VALUE=17>วิศวกรรมอาหาร
+                                  <OPTION VALUE=18>เทคโนโลยีหลังการเก็บเกี่ยว
+                                    <OPTION VALUE=19> พัฒนาการท่องเที่ยว
+                                      <OPTION VALUE=20>เศรษฐศาสตร์สหกรณ์
+                                        <OPTION VALUE=21>เศรษฐศาสตร์สิ่งแวดล้อม
+                                          <OPTION VALUE=22>เศรษฐศาสตร์เกษตร
+                                            <OPTION VALUE=23>เศรษฐศาสตร์
+                                              <OPTION VALUE=24>การบัญชี
+                                                <OPTION VALUE=25>การเงิน
+                                                  <OPTION VALUE=26>บริหารธุรกิจ
+                                                    <OPTION VALUE=27>เทคโนโลยีสารสนเทศทางธุรกิจ
+                                                      <OPTION VALUE=28>การจัดการทั่วไป
+                                                      <OPTION VALUE=29>การตลาด
+                                                        <OPTION VALUE=30>เทคโนโลยีสารสนเทศทางธุรกิจ
+                                                          <OPTION VALUE=31>นิเทศศาสตร์บูรณาการ
+                                                            <OPTION VALUE=32>ภาษาอังกฤษ
+                                                              <OPTION VALUE=33>การประมง
+                                                                <OPTION VALUE=34>เทคโนโลยีภูมิทัศน์
+                                                                  <OPTION VALUE=35>ภูมิสถาปัตยกรรม              
+  </select>
+</span>
+<span action="action_page.php"ALIGN="right">
+  คณะ
+  <select name="คณะ">
+    <OPTION SELECTED>คณะ
+    <OPTION VALUE=1>วิทยาศาสตร์
+      <OPTION VALUE=2>ผลิตกรรมการเกษตร
+      <OPTION VALUE=3>วิศวะกรรมและอุตสาหกรรมเกษตร
+        <OPTION VALUE=4>พัฒนาการท่องเที่ยว
+          <OPTION VALUE=5>เศรษฐศาสตร์
+            <OPTION VALUE=6>บริหารธุรกิจ
+              <OPTION VALUE=7>ศิลปศาสตร์
+                <OPTION VALUE=8>เทคโนโลยีการประมงและทรัพยากรทางน้ำ
+                  <OPTION VALUE=9>สถาปัตยกรรมศาสตร์และการออกแบบสิ่งแวดล้อม            
+  </select>
+</span>
+<br>
+<br>
+<div action="action_page.php"ALIGN="left">
+  มีความประสงค์จะขอลาพักการศึกษา เนื่องจาก
+  <TEXTAREA rows="1" cols="30">
+  </TEXTAREA>
+</div>
+<br>
+
+<div action="action_page.php"ALIGN="left">
+  พร้อมนี้ได้แนบใบยินยอมขอลาพักการศึกษาจากผู้ปกครอง/ใบรับรองแพทย์/เอกสารอื่นๆ 
+</div>
+<br>
+<div action="action_page.php">
+  &emsp; &emsp; &emsp; &emsp;จึงเรียนมาเพื่อโปรดพิจารณา
+</div> 
+<br>
+<div action="action_page.php"ALIGN="right">
+  ขอแสดงความนับถือ &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&ensp; 
+</div>
+<br>
+
+<div action="action_page.php"ALIGN="right">
+<span><input type="text" name="" size=20> &ensp;&ensp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &emsp;&ensp;<br><br>
+  ( <input type="text" name="name" size=20>
+</span>
+  <span>)(1) &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;</span>
+</div>
+<br>
+<div action="action_page.php"ALIGN="right">
+  นักศึกษา &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&ensp;
+</div>
+<br>
+
+<div>
+  <table>
+  <tr>
+    <td>(2) ความเห็นหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ
+<br>
+<input type="checkbox" name="" value="">ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้ <br>
+&emsp;&emsp;<input type="checkbox" name="" value="">ภาคเรียนที่ 1&emsp;&emsp; <input type="checkbox" name=""   value="">ภาคเรียนที่ 2 
+<br><br>
+<div action="action_page.php"ALIGN="center">
+  <span><input type="text" name="" size=20><br><br>
+    ( <input type="text" name="" size=20>
+  </span>
+    <span>)</span>
+  </div>
+  <br>
+  <div action="action_page.php"ALIGN="center">
+    หัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ
+  </div>
+  <br>
+  <div action="action_page.php" ALIGN="center">
+    วันที่:
+    <input type="date" name="day">
+</div><br>
+    </td>
+
+    <td>(3) ความเห็นผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ
+      <br>
+      &emsp;&emsp;<input type="checkbox" name="" value="">ทราบ <br>
+      <br>
+<div action="action_page.php"ALIGN="center">
+  <span><input type="text" name="" size=20><br><br>
+    ( <input type="text" name="" size=20>
+  </span>
+    <span>)</span>
+  </div>
+  <br><br>
+  <div action="action_page.php"ALIGN="center">
+    ผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ
+  </div>
+  <br>
+  <div action="action_page.php" ALIGN="center">
+    วันที่:
+    <input type="date" name="day">
+</div><br><br>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      (4) ความเห็นอาจารย์ที่ปรึกษา
+      <br>
+      &emsp;&emsp;<input type="checkbox" name="" value="">ทราบ <br>
+      <br>
+<div action="action_page.php"ALIGN="center">
+  <span><input type="text" name="" size=20><br><br>
+    ( <input type="text" name="" size=20>
+  </span>
+    <span>)</span>
+  </div>
+  <br>
+  <div action="action_page.php" ALIGN="center">
+    วันที่:
+    <input type="date" name="day">
+</div><br>
+    </td>
+    <td>(5) ความเห็นประธานคณะกรรมการประจําหลักสูตร
+      <br>
+      &emsp;&emsp;<input type="checkbox" name="" value="">ทราบ <br>
+      <br>
+<div action="action_page.php"ALIGN="center">
+  <span><input type="text" name="" size=20><br><br>
+    ( <input type="text" name="" size=20>
+  </span>
+    <span>)</span>
+  </div>
+  <br>
+  <div action="action_page.php" ALIGN="center">
+    วันที่:
+    <input type="date" name="day">
+</div><br></td>
+    
+  </tr>
+  <tr>
+    <td>
+      (6) ความเห็นคณบดี
+      <br>
+      &emsp;&emsp;<input type="checkbox" name="" value="">อนุมัติ&emsp;&emsp;
+      <input type="checkbox" name="" value="">ไม่อนุมัติ <br>
+      <br>
+<div action="action_page.php"ALIGN="center">
+  <span><input type="text" name="" size=20><br><br>
+    ( <input type="text" name="" size=20>
+  </span>
+    <span>)</span>
+  </div>
+  <br>
+  <div action="action_page.php" ALIGN="center">
+    วันที่:
+    <input type="date" name="day">
+</div><br><br><br><br>
+    </td>
+    <td>(7) งานเงินรายได้ กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ <br>
+      ได้รับชําระเงินจํานวน
+      <br>
+      &emsp;<input type="checkbox" name="" value="">ภาคเรียนที่ 1 1,200 บาท
+      <input type="checkbox" name="" value="">ภาคเรียนที่ 2 1,000 บาท <br>
+      <br>
+<div action="action_page.php"ALIGN="center">
+  <span><input type="text" name="" size=20><br><br>
+    ( <input type="text" name="" size=20>
+  </span>
+    <span>)</span>
+  </div>
+  <br>
+  <div action="action_page.php" ALIGN="center">
+    วันที่:
+    <input type="date" name="day">
+</div><br>
+</td>
+    
+  </tr>
+  <tr>
+    <td>
+      (8) ส่งเอกสารคําร้องขอลาพักการศึกษาตัวจริง<br>  
+      &emsp;ให้กลุ่มภารกิจทะเบียนฯ ชั้น 2 อาคารอํานวย<br> 
+      &emsp;ยศสุข เพื่อบันทึกคําร้องขอลาพักการศึกษา<br>
+      &emsp;และให้นักศึกษาเก็บหลักฐานใบเสร็จที่ชําระเงิน<br>
+      &emsp;ไว้เพื่อตรวจสอบการบันทึกการลาพักการศึกษา
+      <br><br><br><br><br><br><br>
+    <td>(9) สําหรับเจ้าหน้าที่บันทึกลงฐานข้อมูล<br> ได้บันทึกการ
+      ข้อมูลดังกล่าว<br>
+      <div action="action_page.php" ALIGN="right">
+         ในวันที่:
+      <input type="date" name="day">&emsp;</div><br>
+      <div action="action_page.php"ALIGN="center">
+        <span><input type="text" name="" size=20><br><br>
+          ( <input type="text" name="" size=20>
+        </span>
+          <span>)</span>
+        </div>
+        <br>
+        <div action="action_page.php" ALIGN="center">
+          วันที่:
+          <input type="date" name="day">
+      </div>
+      <br>
+    </td> 
+  </tr>
+</table> 
+</div>
+<br>
+<hr><hr>
+<br><br><br>
+
+<h3 ALIGN="CENTER" >คํารับรองของผู้ปกครอง</h3>
+<div action="action_page.php" ALIGN="RIGHT">
+  <span> เขียนที่ </span>
+  <span action="action_page.php"ALIGN="">
+    บ้านเลขที่
+      <Input Type="num" size="1" maxlength="3">
+        </span>
+        <span action="action_page.php"ALIGN="">
+          หมู่ที่
+            <Input Type="num" size="1" maxlength="3">
+              </span>
+              <span action="action_page.php"ALIGN="">
+                ตำบล
+                  <Input Type="text" size="5" maxlength="15">
+                    </span><br>
+                    <span action="action_page.php"ALIGN="">
+                      อำเภอ
+                        <Input Type="text" size="8" maxlength="20">
+                          </span>
+                          <span action="action_page.php"ALIGN="">
+                            จังหวัด
+                              <Input Type="text" size="8" maxlength="20">
+                                </span><br>
+                                <span action="action_page.php"ALIGN="">
+                                  รหัสไปรษณีย์
+                                    <Input Type="num" size="3" maxlength="6">
+                                      </span>
+                                      <span action="action_page.php"ALIGN="">
+                                        โทรศัพท์
+                                          <Input Type="num" size="8" maxlength="10">
+                                            </span><br><br>
+                                            <div action="action_page.php" ALIGN="">
+                                              วันที่:
+                                              <input type="date" name="day">
+                                          </div>                                          
+</div><br><br>
+<div>
+  <span action="action_page.php"ALIGN="left">
+    เรื่อง ยินยอมให้นักศึกษาลาพักการศึกษา ภาคเรียนที่
+    <select name="cars">
+      <OPTION SELECTED>ภาคเรียน
+      <option value="volvo">1</option>
+      <option value="saab">2</option>
+    </select>
+  </span>
+  <span action="action_page.php"ALIGN="left">
+  ปีการศึกษาที่
+  <SELECT>
+    <OPTION SELECTED>ปีการศึกษา
+      <OPTION VALUE=1>2559
+    <OPTION VALUE=2>2560
+    <OPTION VALUE=3>2561
+      <OPTION VALUE=4>2562
+        <OPTION VALUE=5>2563
+          <OPTION VALUE=6>2564
+            <OPTION VALUE=7>2565
+    </SELECT>
+  </span>
+</div>
+<br>
+<div action="action_page.php"ALIGN="left">
+  เรียน คณบดีคณะ
+  <select name="คณะ">
+    <OPTION SELECTED>คณะ
+    <OPTION VALUE=1>วิทยาศาสตร์
+      <OPTION VALUE=2>ผลิตกรรมการเกษตร
+      <OPTION VALUE=3>วิศวะกรรมและอุตสาหกรรมเกษตร
+        <OPTION VALUE=4>พัฒนาการท่องเที่ยว
+          <OPTION VALUE=5>เศรษฐศาสตร์
+            <OPTION VALUE=6>บริหารธุรกิจ
+              <OPTION VALUE=7>ศิลปศาสตร์
+                <OPTION VALUE=8>เทคโนโลยีการประมงและทรัพยากรทางน้ำ
+                  <OPTION VALUE=9>สถาปัตยกรรมศาสตร์และการออกแบบสิ่งแวดล้อม            
+  </select>
+</div>
+<br>
+<div action="action_page.php" style="float:right">
+ ตามที่ <input type="checkbox" name="sex" value="male">นาย <input type="checkbox" name="sex"   value="female">นาง 
+   <input type="checkbox" name="sex" value="male">นางสาว
+<span>ชื่อ <input type="text" name="firstname" size=13></span>
+<span> นามสกุล <input type="text" name="surname" size=13></span>
+</div>
+  <br>
+  <br>
+  <div>
+    <span action="action_page.php"ALIGN="left">
+      รหัสนักศึกษา
+      <Input Type="num" size="8" maxlength="10">
+      </span>
+      <span action="action_page.php"ALIGN="left">
+  โทรศัพท์มือถือ
+    <Input Type="num" size="8" maxlength="10">
+      </span>
+  <span>โปรดระบุ</span>
+  </div>
+  <br>
+  <div>
+    หลักสูตร ปริญญาตรี <input type="checkbox" name="sex" value="male">4–5 ปี <input type="checkbox" name="sex"   value="female">4 ปีเทียบเข้าเรียน (2ปี) 
+    <input type="checkbox" name="sex" value="male">ภาคปกติ<input type="checkbox" name="sex" value="male">ภาคสมทบ
+  </div>
+  <br>
+  <span action="action_page.php"ALIGN="left">
+    สาขา
+    <select name="major">
+      <OPTION SELECTED>สาขา
+      <OPTION VALUE=1>คณิตศาสตร์
+        <OPTION VALUE=2> เคมี
+        <OPTION VALUE=3>เทคโนโลยีสารสนเทศ
+          <OPTION VALUE=4>วิทยาการคอมพิวเตอร์
+            <OPTION VALUE=5>สถิติ
+              <OPTION VALUE=6>เทคโนโลยีชีวภาพ
+                <OPTION VALUE=7>วัสดุศาสตร์
+                  <OPTION VALUE=8>อารักขาพืช
+                    <OPTION VALUE=9>ปฐพีศาสตร์
+                      <OPTION VALUE=10>สัตวศาสตร์
+                        <OPTION VALUE=11> เกษตรศาสตร์ (พืชไร่)
+                        <OPTION VALUE=12>พืชศาสตร์ (พืชสวน)
+                          <OPTION VALUE=13>เกษตรเคมี
+                            <OPTION VALUE=14>วิทยาศาสตร์และเทคโนโยลีการอาหาร
+                              <OPTION VALUE=15>วัสดุศาสตร์ (อุตสาหกรรมยาง)
+                                <OPTION VALUE=16>วิศวกรรมเกษตร
+                                  <OPTION VALUE=17>วิศวกรรมอาหาร
+                                    <OPTION VALUE=18>เทคโนโลยีหลังการเก็บเกี่ยว
+                                      <OPTION VALUE=19> พัฒนาการท่องเที่ยว
+                                        <OPTION VALUE=20>เศรษฐศาสตร์สหกรณ์
+                                          <OPTION VALUE=21>เศรษฐศาสตร์สิ่งแวดล้อม
+                                            <OPTION VALUE=22>เศรษฐศาสตร์เกษตร
+                                              <OPTION VALUE=23>เศรษฐศาสตร์
+                                                <OPTION VALUE=24>การบัญชี
+                                                  <OPTION VALUE=25>การเงิน
+                                                    <OPTION VALUE=26>บริหารธุรกิจ
+                                                      <OPTION VALUE=27>เทคโนโลยีสารสนเทศทางธุรกิจ
+                                                        <OPTION VALUE=28>การจัดการทั่วไป
+                                                        <OPTION VALUE=29>การตลาด
+                                                          <OPTION VALUE=30>เทคโนโลยีสารสนเทศทางธุรกิจ
+                                                            <OPTION VALUE=31>นิเทศศาสตร์บูรณาการ
+                                                              <OPTION VALUE=32>ภาษาอังกฤษ
+                                                                <OPTION VALUE=33>การประมง
+                                                                  <OPTION VALUE=34>เทคโนโลยีภูมิทัศน์
+                                                                    <OPTION VALUE=35>ภูมิสถาปัตยกรรม              
+    </select>
+  </span>
+  <span action="action_page.php"ALIGN="right">
+    คณะ
+    <select name="คณะ">
+      <OPTION SELECTED>คณะ
+      <OPTION VALUE=1>วิทยาศาสตร์
+        <OPTION VALUE=2>ผลิตกรรมการเกษตร
+        <OPTION VALUE=3>วิศวะกรรมและอุตสาหกรรมเกษตร
+          <OPTION VALUE=4>พัฒนาการท่องเที่ยว
+            <OPTION VALUE=5>เศรษฐศาสตร์
+              <OPTION VALUE=6>บริหารธุรกิจ
+                <OPTION VALUE=7>ศิลปศาสตร์
+                  <OPTION VALUE=8>เทคโนโลยีการประมงและทรัพยากรทางน้ำ
+                    <OPTION VALUE=9>สถาปัตยกรรมศาสตร์และการออกแบบสิ่งแวดล้อม            
+    </select>
+  </span>
+  <br>
+  <br>
+  <div>
+    <span action="action_page.php"ALIGN="left">
+      ซึ่งเป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาพักการศึกษา ภาคเรียนที่
+      <select name="cars">
+        <OPTION SELECTED>ภาคเรียน
+        <option value="volvo">1</option>
+        <option value="saab">2</option>
+      </select>
+    </span>
+    <span action="action_page.php"ALIGN="left">
+    ปีการศึกษาที่
+    <SELECT>
+      <OPTION SELECTED>ปีการศึกษา
+        <OPTION VALUE=1>2559
+      <OPTION VALUE=2>2560
+      <OPTION VALUE=3>2561
+        <OPTION VALUE=4>2562
+          <OPTION VALUE=5>2563
+            <OPTION VALUE=6>2564
+              <OPTION VALUE=7>2565
+      </SELECT>
+    </span>
+  </div>
+  <br>
+  <div action="action_page.php"ALIGN="left">
+    เนื่องจาก
+    <TEXTAREA rows="1" cols="50">
+    </TEXTAREA>
+  </div>
+  <br>
+  <div action="action_page.php" style="float:right">
+    ข้าพเจ้า <input type="checkbox" name="sex" value="male">นาย <input type="checkbox" name="sex"   value="female">นาง 
+      <input type="checkbox" name="sex" value="male">นางสาว
+   <span>ชื่อ <input type="text" name="firstname" size=13></span>
+   <span> นามสกุล <input type="text" name="surname" size=13></span>
+   </div><br>
+   <div action="action_page.php"ALIGN="left">
+    ผู้ปกครองของนักศึกษาดังกล่าวข้างต้น ได้รับทราบการขอลาพักการศึกษาแล้ว และยินดีให้ปฏิบัติตามความประสงค์ของนักศึกษา  
+  </div>
+  <br>
+  <div action="action_page.php">
+    &emsp; &emsp; &emsp; &emsp;จึงเรียนมาเพื่อโปรดพิจารณา
+  </div> 
+  <br>
+  <div action="action_page.php"ALIGN="right">
+    ขอแสดงความนับถือ &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;
+  </div>
+  <br>
+  
+  <div action="action_page.php"ALIGN="right">
+  
+    ( <input type="text" name="name" size=20>
+  </span>
+    <span>) &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&ensp;</span>
+  </div>
+  <br>
+  <div action="action_page.php"ALIGN="right">
+    ผู้ปกครอง &emsp;  &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&ensp;
+  </div><br>
+  <div action="action_page.php"ALIGN="right">
+      นักศึกษา &emsp;&emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &ensp;&ensp; &emsp; &emsp;
+  </div>
+  <br>
+
+  <div>
+<u><b>ขั้นตอนการเสนอคําร้องลาพักการศึกษา</b></u><br><br>
+<div action="action_page.php"ALIGN="">
+  1.นักศึกษากรอกคําร้องขอลาพักการศึกษา 
+</div>
+<br>
+<div action="action_page.php"ALIGN="">
+  2.เสนอคําร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ
+</div>
+<br>
+<div action="action_page.php"ALIGN="">
+  <span>
+  3.เสนอคําร้องต่อผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ</span>
+  <span>
+    <b>(ชั้น 3 อาคารอํานวย ยศสุข)</b>
+  </span>
+</div>
+<div action="action_page.php"ALIGN="">
+  <span><br>
+    4.เสนอคําร้องต่ออาจารย์ที่ปรึกษา</span>
+  <span>
+    <b>(คณะที่นักศึกษาสังกัด)</b>
+  </span>
+</div>
+<div action="action_page.php"ALIGN="">
+  <span><br>
+    5.เสนอคําร้องต่อประธานคณะกรรมการประจําหลักสูตร</span>
+  <span>
+    <b>(คณะที่นักศึกษาสังกัด)</b>
+  </span>
+</div>
+<div action="action_page.php"ALIGN="">
+  <span><br>
+    6.เสนอคําร้องต่อคณบดี เพื่ออนุมัติ</span>
+  <span>
+    <b>(คณะที่นักศึกษาสังกัด)</b>
+  </span>
+</div>
+<div action="action_page.php"ALIGN="">
+  <span><br>
+    7.นําคําร้องไปชําระเงิน</span>
+  <span>
+    <b> (กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ)</b>
+  </span>
+</div>
+<div action="action_page.php"ALIGN="">
+  <span><br>
+    8.นําคําร้องขอลาพักการศึกษา ที่ชําระเงินแล้ว</span>
+  <span>
+    <b>  (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ) </b><br><br>
+    เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป
+  </span>
+</div>
+<br>
+<div action="action_page.php"ALIGN="">
+  9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป 
+</div>
+<br>
+  </div>
+  <hr><hr>
+      </div>
+ </body>
+</form>
+</html>
